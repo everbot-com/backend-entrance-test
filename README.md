@@ -150,20 +150,6 @@ These are not required but will be considered a plus:
 
 ---
 
-## Evaluation Criteria
-
-| Category              | Weight        | What We Look For                                    |
-| --------------------- | ------------- | --------------------------------------------------- |
-| Architecture          | ⭐⭐⭐⭐⭐     | Clear layering, extensibility, abstraction          |
-| TypeScript Proficiency| ⭐⭐⭐⭐       | Proper use of types, interfaces, enums              |
-| Code Readability      | ⭐⭐⭐⭐       | Naming, structure, comments                         |
-| Error Handling        | ⭐⭐⭐         | Graceful handling of invalid input                  |
-| API Design            | ⭐⭐⭐         | RESTful, consistent responses                       |
-| AI Usage Strategy     | ⭐⭐           | Ability to refine AI output, not copy blindly       |
-| Tests (Optional)      | ⭐⭐           | Basic unit tests                                    |
-
----
-
 ## Submission
 
 **Please fork this repository and submit a Pull Request (PR) when you've completed the implementation.**
