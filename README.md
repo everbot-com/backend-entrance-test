@@ -1,11 +1,6 @@
 # Backend Engineer Practical Test — Plugin-based Message Processing System
 
-This repository contains a practical test for backend engineer candidates.  
-The goal is to evaluate architecture design, TypeScript proficiency, API design, and extensibility thinking.
-
----
-
-## 📌 Overview
+## Overview
 
 Please implement a **plugin-based message processing system** using **TypeScript**.  
 The system should accept different types of messages and dispatch them to the correct handler based on the message type.
