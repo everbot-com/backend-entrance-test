@@ -56,7 +56,7 @@ Future message types (e.g., LINE, Slack, Webhook) should be easy to add without 
 
 Implement a POST endpoint:
 
-**POST /messages**
+#### POST /messages
 
 Request Body:
 
@@ -85,14 +85,14 @@ Framework is free to choose:
 
 You must implement:
 
-**MessageHandler interface (or abstract class)**
+#### MessageHandler interface (or abstract class)
 
 Defines:
 
 - `type: string`
 - `handle(payload: any): Promise<any> | any`
 
-**Handlers**
+#### Handlers
 
 Implement at least:
 
@@ -101,7 +101,7 @@ Implement at least:
 
 Each handler must implement the MessageHandler interface.
 
-**MessageProcessor**
+#### MessageProcessor
 
 Responsible for:
 
@@ -130,23 +130,6 @@ src/
 
 Database is not required.
 All data may be stored in memory.
-
----
-
-## Bonus Points (Optional)
-
-These are not required but will be considered a plus:
-
-- Use of TypeScript features (interface, type, enum, generics)
-- Dependency Injection or factory pattern
-- Async handler support (simulate external API calls with delays)
-- Input validation (Zod, class-validator, etc.)
-- Comprehensive error handling (400/404/500 with meaningful error messages)
-- Unit tests (Jest / Vitest) with good coverage
-- Dynamic plugin loading (scan folder automatically)
-- Logging (console.log is acceptable, but structured logging is a plus)
-- Consistent error response format
-- Type-safe payloads (using TypeScript types/interfaces instead of `any`)
 
 ---
 

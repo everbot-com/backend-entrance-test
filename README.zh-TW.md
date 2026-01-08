@@ -55,7 +55,7 @@
 
 實作一個 POST 端點：
 
-**POST /messages**
+#### POST /messages
 
 請求體：
 
@@ -84,14 +84,14 @@
 
 您必須實作：
 
-**MessageHandler 介面（或抽象類別）**
+#### MessageHandler 介面（或抽象類別）
 
 定義：
 
 - `type: string`
 - `handle(payload: any): Promise<any> | any`
 
-**處理器**
+#### 處理器
 
 至少實作：
 
@@ -100,7 +100,7 @@
 
 每個處理器必須實作 MessageHandler 介面。
 
-**MessageProcessor**
+#### MessageProcessor
 
 負責：
 
@@ -129,23 +129,6 @@ src/
 
 不需要資料庫。
 所有資料可以儲存在記憶體中。
-
----
-
-## 加分項（可選）
-
-這些不是必需的，但會被視為加分：
-
-- TypeScript 特性的使用（interface、type、enum、generics）
-- 依賴注入或工廠模式
-- 異步處理器支援（模擬外部 API 調用，包含延遲）
-- 輸入驗證（Zod、class-validator 等）
-- 全面的錯誤處理（400/404/500，帶有意義的錯誤訊息）
-- 單元測試（Jest / Vitest），具有良好的覆蓋率
-- 動態插件加載（自動掃描資料夾）
-- 日誌記錄（console.log 可接受，但結構化日誌記錄是加分項）
-- 一致的錯誤響應格式
-- 類型安全的 payload（使用 TypeScript 類型/介面，而不是 `any`）
 
 ---
 
