@@ -2,7 +2,7 @@
 
 ## Overview
 
-Please implement a **plugin-based message processing system** using **TypeScript**.  
+Please implement a **plugin-based message processing system** using **TypeScript**.
 The system should accept different types of messages and dispatch them to the correct handler based on the message type.
 
 **Note:**
@@ -73,7 +73,7 @@ Framework is free to choose:
 - Express
 - Fastify
 - NestJS
-- Or native Node.js/Bun HTTP
+- Native Node.js/Bun HTTP
 
 ---
 
@@ -136,7 +136,7 @@ All data may be stored in memory.
 Please provide:
 
 - A GitHub repository link (make sure it's public or accessible)
-- Clear instructions to run the project (including Node.js version requirement, if any)
+- Clear instructions to run the project (including Node.js/Bun version requirement, if any)
 - `package.json` with all necessary scripts (e.g., `bun start`, `bun run dev`)
 - (Optional) Notes on design decisions and trade-offs
 - (Optional) Brief explanation of your architecture choices
