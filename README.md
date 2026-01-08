@@ -9,6 +9,7 @@ The system should accept different types of messages and dispatch them to the co
 
 - You can use any package manager (npm, yarn, bun, pnpm, etc.)
 - If you're not familiar with TypeScript, you may use JavaScript instead (though TypeScript is preferred)
+- You are also welcome to use other backend languages of your choice (e.g., Python, Go, Java, Rust, etc.)
 
 Example message:
 

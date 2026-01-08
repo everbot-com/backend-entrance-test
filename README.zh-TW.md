@@ -9,6 +9,7 @@
 
 - 可使用任何套件管理器（npm、yarn、bun、pnpm 等）
 - 若真的不會 TypeScript，可使用 JavaScript（但建議使用 TypeScript）
+- 您也可以選擇使用您熟悉的其他後端語言（例如：Python、Go、Java、Rust 等）
 
 範例訊息：
 
