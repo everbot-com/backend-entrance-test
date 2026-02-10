@@ -130,6 +130,73 @@ src/
 
 ---
 
+## 運行說明
+
+### 系統需求
+
+- **Bun**: 版本 1.0.0 或更高
+- **Node.js**: 版本 18.0.0 或更高（如果使用 Node.js 運行）
+- **TypeScript**: 版本 5.0 或更高
+
+### 安裝依賴
+
+```bash
+bun install
+```
+
+### 運行開發服務器
+
+```bash
+bun run dev
+```
+
+服務器將在 `http://localhost:3000`（或您指定的端口）啟動，並在文件更改時自動重載。
+
+### 運行生產環境
+
+```bash
+bun start
+```
+
+### 構建項目
+
+```bash
+bun run build
+```
+
+編譯後的文件將輸出到 `dist/` 目錄。
+
+### 測試 API
+
+#### 使用 curl 發送請求
+
+```bash
+# 發送電子郵件
+curl -X POST http://localhost:3000/messages \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "email",
+    "payload": {
+      "to": "test@example.com",
+      "subject": "Hello",
+      "body": "World"
+    }
+  }'
+
+# 發送 SMS
+curl -X POST http://localhost:3000/messages \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "sms",
+    "payload": {
+      "to": "+1234567890",
+      "message": "Hello World"
+    }
+  }'
+```
+
+---
+
 ## 提交
 
 **請 fork 此儲存庫，待實作完畢後發 Pull Request (PR)。**
