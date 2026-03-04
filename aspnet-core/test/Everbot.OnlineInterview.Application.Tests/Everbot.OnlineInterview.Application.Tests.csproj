@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Everbot.OnlineInterview.Application\Everbot.OnlineInterview.Application.csproj" />
+    <ProjectReference Include="..\Everbot.OnlineInterview.Domain.Tests\Everbot.OnlineInterview.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Microsoft">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Everbot.OnlineInterview.EntityFrameworkCore\Everbot.OnlineInterview.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Everbot.OnlineInterview.Application.Tests\Everbot.OnlineInterview.Application.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Volo">
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+
+  <ItemGroup Label="Microsoft">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

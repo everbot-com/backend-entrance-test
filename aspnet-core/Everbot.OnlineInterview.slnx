@@ -1,0 +1,46 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path=".prettierrc" />
+    <File Path="common.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="Dockerfile" />
+    <File Path="NuGet.Config" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Everbot.OnlineInterview.Application.Contracts/Everbot.OnlineInterview.Application.Contracts.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.Application/Everbot.OnlineInterview.Application.csproj" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Project Path="src/Everbot.OnlineInterview.DbMigrator/Everbot.OnlineInterview.DbMigrator.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.Domain.Shared/Everbot.OnlineInterview.Domain.Shared.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.Domain/Everbot.OnlineInterview.Domain.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.EntityFrameworkCore/Everbot.OnlineInterview.EntityFrameworkCore.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.HttpApi.Client/Everbot.OnlineInterview.HttpApi.Client.csproj" />
+    
+    <Project Path="src/Everbot.OnlineInterview.HttpApi.Host/Everbot.OnlineInterview.HttpApi.Host.csproj" />
+    <Project Path="src/Everbot.OnlineInterview.HttpApi/Everbot.OnlineInterview.HttpApi.csproj" />
+    
+    
+    
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Everbot.OnlineInterview.Application.Tests/Everbot.OnlineInterview.Application.Tests.csproj" />
+    <Project Path="test/Everbot.OnlineInterview.Domain.Tests/Everbot.OnlineInterview.Domain.Tests.csproj" />
+    <Project Path="test/Everbot.OnlineInterview.EntityFrameworkCore.Tests/Everbot.OnlineInterview.EntityFrameworkCore.Tests.csproj" />
+    <Project Path="test/Everbot.OnlineInterview.HttpApi.Client.ConsoleTestApp/Everbot.OnlineInterview.HttpApi.Client.ConsoleTestApp.csproj" />
+    
+    <Project Path="test/Everbot.OnlineInterview.TestBase/Everbot.OnlineInterview.TestBase.csproj" />
+    
+  </Folder>
+</Solution>

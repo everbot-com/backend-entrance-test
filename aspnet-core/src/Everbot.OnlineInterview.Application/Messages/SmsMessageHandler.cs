@@ -1,0 +1,48 @@
+using System;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
+using Volo.Abp.DependencyInjection;
+
+namespace Everbot.OnlineInterview.Messages;
+
+/// <summary>
+/// SMS 訊息處理器
+/// </summary>
+public class SmsMessageHandler : IMessageHandler, ITransientDependency
+{
+    public ILogger<SmsMessageHandler> Logger { get; set; } = NullLogger<SmsMessageHandler>.Instance;
+
+    public MessageType MessageType => MessageType.Sms;
+
+    public async Task<MessageResponseDto> SendAsync(MessageRequestDto input)
+    {
+        try
+        {
+            // TODO: 接入實際 Email 發送服務（如 IEmailSender、SendGrid 等）
+            var messageId = $"msg-{Guid.NewGuid():N}";
+
+            // 模擬錯誤
+            if (input.Payload != null && string.IsNullOrWhiteSpace(input.Payload.Body) && input.Payload.Body.Contains("Exception"))
+            {
+                throw new Exception("伺服器錯誤");
+            }
+
+            return new MessageResponseDto(
+                success: true,
+                message: "Email sent successfully",
+                data: new MessageDataDto(messageId, "sent")
+            );
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Failed to send email to {To}", input.Payload.To);
+
+            return new MessageResponseDto(
+                success: false,
+                message: ex.Message,
+                data: new MessageDataDto(string.Empty, "500")
+            );
+        }
+    }
+}

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Everbot.OnlineInterview.Domain\Everbot.OnlineInterview.Domain.csproj" />
+    <ProjectReference Include="..\Everbot.OnlineInterview.Application.Contracts\Everbot.OnlineInterview.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Volo">
+    <PackageReference Include="Volo.Abp.Account.Application" />
+    <PackageReference Include="Volo.Abp.Identity.Application" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" />
+  </ItemGroup>
+
+  <ItemGroup Label="Yuu">
+    <PackageReference Include="Yuu.ClientInfo.Provider.Abstractions" />
+    <PackageReference Include="Yuu.Environment.Provider.Abstractions" />
+  </ItemGroup>
+
+</Project>
