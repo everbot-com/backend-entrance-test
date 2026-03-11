@@ -14,6 +14,7 @@ func main() {
 
 	mp := processor.NewMessageProcessor()
 	mp.Register(handlers.NewEmailHandler())
+	mp.Register(handlers.NewSMSHandler())
 
 	routes.RegisterMessageRoutes(r, mp)
 
