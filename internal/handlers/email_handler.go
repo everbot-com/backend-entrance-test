@@ -8,16 +8,21 @@ import (
 	"mps/internal/processor"
 )
 
+// EmailHandler handles email-type messages.
 type EmailHandler struct{}
 
+// NewEmailHandler creates a new EmailHandler instance.
 func NewEmailHandler() *EmailHandler {
 	return &EmailHandler{}
 }
 
+// Type returns the message type key for EmailHandler.
 func (h *EmailHandler) Type() string {
 	return "email"
 }
 
+// Handle validates required email payload fields and returns a mocked send result.
+// Required fields are to, subject, and body.
 func (h *EmailHandler) Handle(payload map[string]any) (*processor.HandlerResult, error) {
 	to, ok := payload["to"].(string)
 	if !ok || to == "" {
